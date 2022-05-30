@@ -5,6 +5,9 @@ this lets you install docker &amp; docker compose in one line
 - it checks for python3
 - it installs (and it automatically makes it so that you dont have to type sudo whenever you run a docker command)
 
+## WARNING
+- please restart or log out and back in so that docker can be ran without sudo
+
 ---
 ## **INSTALL SCRIPT**
 ```
