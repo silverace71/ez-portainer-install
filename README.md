@@ -7,6 +7,7 @@ this lets you install docker &amp; docker compose in one line
 
 ## WARNING
 - please restart or log out and back in so that docker can be ran without sudo
+- make sure you are on an up to date debian system
 
 ---
 ## **INSTALL SCRIPT**
@@ -16,4 +17,4 @@ sudo apt-get install -y python3 && sudo curl -sSL https://raw.githubusercontent.
 ---
 ### ***CREDIT***
 - silverace_71 - writing code (this is my first script) and taking some from pouter
-- [ckissane](https://github.com/ckissane) - for writing out the sudo check and helping silverace_71 learn some basic python stuff
+- [ckissane](https://github.com/ckissane) - for helping silverace_71 learn some basic python stuff
