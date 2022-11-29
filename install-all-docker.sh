@@ -1,7 +1,15 @@
 #!/bin/bash
 
-echo "docker, docker compose, and portainer, alongside any other dependencies [YOU HAVE TO REBOOT YOUR PC]"
-
+echo "docker, docker compose, and portainer, alongside any other dependencies"
 sleep 3
-
-sudo curl -fsSL https://get.docker.com -o get-docker.sh
+echo "This will reboot your system and you need sudo privileges. do you wish to continue (y/n)"
+read confirm
+if [[ $confirm == "y" ]]; then
+    echo "please type your username"
+        read name
+    echo "Installing Docker"
+        sudo apt update
+        
+else
+        echo "installation canceled"
+fi
