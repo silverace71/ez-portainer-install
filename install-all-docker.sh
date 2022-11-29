@@ -30,6 +30,7 @@ read confirm
                 sudo reboot
             else
                 echo "To avoid any issues you must reboot or log out and back in. Otherwise you might run into issues. Good luck."
+            fi
 
         
     else
