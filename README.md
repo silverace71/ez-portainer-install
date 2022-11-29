@@ -12,7 +12,7 @@ this lets you install docker &amp; docker compose in one line
 ---
 ## **INSTALL SCRIPT**
 ```
-sudo chmod +x install-all-docker.sh && sudo ./install-all-docker.sh
+wget https://raw.githubusercontent.com/silverace71/docker-and-docker-compose/main/install.py && sudo chmod +x install-all-docker.sh && sudo ./install-all-docker.sh
 ```
 ---
 ### ***CREDIT***
