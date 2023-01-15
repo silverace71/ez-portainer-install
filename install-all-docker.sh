@@ -55,10 +55,10 @@ read confirm
         echo "Portainer is located at: https://${lanIp}:9443";
         sleep 3
 ##reboot time
-    echo "it is HIGHLY reccomended that you reboot your system, do you wish to reboot now (y/n)"
-        read reboot
-            if [[ $reboot == "y" ]]; then
-                sudo reboot
+    echo "it is HIGHLY reccomended that you logout and log back into your system, do you wish to do so now? (y/n)"
+        read log
+            if [[ $log == "y" ]]; then
+                pkill -kill -u $name
             else
                 echo "To avoid any issues you must reboot or log out and back in. Otherwise you might run into issues. Good luck."
             fi
