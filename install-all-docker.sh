@@ -60,7 +60,7 @@ read confirm
             if [[ $log == "y" ]]; then
                 pkill -kill -u $name
             else
-                echo "To avoid any issues you must reboot or log out and back in. Otherwise you might run into issues. Good luck."
+                echo "To avoid any issues you must reboot or log out and back in, otherwise you might run into issues. Run pkill -kill -u ${name}."
             fi
 
         
