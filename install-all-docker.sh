@@ -1,14 +1,12 @@
 #!/bin/bash
 
 ##this is just checking and explaining things
-echo "docker, docker compose, and portainer, alongside any other dependencies, do you wish to continue (y/n)"
+echo "this will install docker, docker compose, and portainer, alongside any other dependencies, do you wish to continue (y/n)"
 read confirm
     if [[ $confirm == "y" ]]; then
         name=$(whoami)
         echo "Installing Docker"
 ##This is where all the commands are
-
-            sudo usermod -aG docker $name
 
             if [ -x "$(command -v apt-get)" ]; then
             sudo curl -fsSL https://get.docker.com -o get-docker.sh
@@ -50,6 +48,7 @@ read confirm
             echo "installation canceled, hit ctrl+c to exit"
             sleep 69420
             fi
+    sudo usermod -aG docker $name
 ##telling you where portainer is
     lanIp="$(ip -4 -o -br addr|awk '$0 ~ /^[we]\w+\s+UP\s+/ {str = gsub("/[1-9][0-9]*", "", $0); print $3}')";
 
