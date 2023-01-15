@@ -43,10 +43,10 @@ read confirm
             sudo docker pull portainer/portainer-ce:latest
             sudo docker run -d -p 8000:8000 -p 9443:9443 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
             else
-            echo "no supported package manager. Please contact me through email at silver@silverhub.xyz and tell me to fix it."
+            echo "no supported package manager. Please contact me through email at silver@silverhub.xyz or on discord at silverace_71#3430 and tell me to fix it."
             sleep 3
-            echo "installation canceled, hit ctrl+c to exit"
-            sleep 69420
+            echo "installation canceled"
+            exit
             fi
     sudo usermod -aG docker $name
 ##telling you where portainer is
