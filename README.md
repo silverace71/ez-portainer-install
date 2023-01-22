@@ -12,8 +12,9 @@ this lets you install portainer, docker, and docker compose, alongside all of th
 ---
 ## **INSTALL SCRIPT**
 ```
-wget https://raw.githubusercontent.com/silverace71/docker-and-docker-compose/main/install-all-docker.sh && sudo chmod +x install-all-docker.sh && sudo ./install-all-docker.sh
+curl -sS https://raw.githubusercontent.com/silverace71/docker-and-docker-compose/main/install-all-docker.sh | sudo bash  
 ```
 ---
 ### ***CREDIT***
 - silverace_71 (me) - writing code (this is my first script)
+- astro - telling me im dumb
