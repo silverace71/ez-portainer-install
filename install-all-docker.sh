@@ -3,7 +3,7 @@
 ##this is just checking and explaining things
 echo "this will install docker, docker compose, and portainer, alongside any other dependencies, do you wish to continue (y/n)"
 read confirm
-    if [[ $confirm == "y" ]]; then
+    if [[ $confirm =~ ^[Yy]$ ]]; then
         name=$(whoami)
         echo "Installing Docker"
 ##This is where all the commands are
@@ -43,7 +43,7 @@ read confirm
             sudo docker pull portainer/portainer-ce:latest
             sudo docker run -d -p 8000:8000 -p 9443:9443 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
             else
-            echo "no supported package manager. Please contact me through email at silver@silverhub.xyz or on discord at silverace_71#3430 and tell me to fix it."
+            echo "no supported package manager. Please contact me through email at silver@silverhub.xyz or on discord at silverace_71 and tell me to fix it."
             sleep 3
             echo "installation canceled"
             exit
